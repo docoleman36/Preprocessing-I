@@ -176,7 +176,7 @@ header nav a {
   font-family: "Montserrat", sans-serif;
 }
 .top-content hr {
-  width: 870px;
+  width: 850px;
   float: right;
 }
 .top-content p {
@@ -235,4 +235,50 @@ header nav a {
 }
 .middle-content .middle2 ul li:nth-child(5) {
   border-radius: 0 0 0 1.2rem;
+}
+.table {
+  margin-left: 2.5rem;
+}
+.table h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.table table {
+  font-size: 1.8rem;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.table table tr {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.table table tr:nth-child(even) {
+  background-color: #eee;
+}
+.table table tr:nth-child(odd) {
+  background-color: white;
+}
+footer {
+  margin: 3rem 0;
+  padding: 3rem;
+  background-color: #696969;
+}
+footer .info {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+footer .info p {
+  margin-right: 1rem;
+}
+footer .copy {
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
 }

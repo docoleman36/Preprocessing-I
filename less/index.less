@@ -130,9 +130,19 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+// Mixins
 .font() {
   font-family: "Montserrat", sans-serif;
 }
+
+.margin() {
+  margin-left: 2.5rem;
+}
+
+// Variables
+@button-color: #696969;
+@footer-color: #696969;
 
 * {
   box-sizing: border-box;
@@ -196,20 +206,20 @@ header {
 
 .top-content {
   hr {
-    width: 870px;
+    width: 850px;
     float: right;
   }
 
   p {
     font-size: 1.3rem;
-    margin-left: 2.5rem;
+    .margin;
     padding: 2rem 0;
     .font;
   }
 
   button {
-    margin-left: 2.5rem;
-    background-color: #696969;
+    .margin;
+    background-color: @button-color;
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 1rem;
@@ -269,4 +279,63 @@ header {
       }
     }
   }
+}
+
+.table {
+  .margin;
+
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    .font;
+  }
+
+  table {
+    font-size: 1.8rem;
+    width: 100%;
+    .font;
+
+    tr {
+      border-top: 1px solid black;
+      border-bottom: 1px solid black;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    tr:nth-child(odd) {
+      background-color: white;
+    }
+  }
+}
+
+footer {
+  margin: 3rem 0;
+  padding: 3rem;
+  background-color: @footer-color;
+
+  .info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    .font;
+    color: white;
+
+    p {
+      margin-right: 1rem;
+    }
+  }
+
+  .copy {
+    font-size: 1.5rem;
+    .font;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media (max-width: 500px) {
 }
