@@ -260,6 +260,9 @@ header nav a {
 .table table tr:nth-child(odd) {
   background-color: white;
 }
+.table table td {
+  text-align: center;
+}
 footer {
   margin: 3rem 0;
   padding: 3rem;
