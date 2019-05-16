@@ -141,6 +141,11 @@ body {
   max-width: 900px;
   margin: auto;
 }
+@media (max-width: 500px) {
+  .container {
+    margin: auto;
+  }
+}
 header nav {
   display: flex;
   justify-content: flex-end;
@@ -151,6 +156,15 @@ header nav a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
+}
+header nav a:hover {
+  background-color: #696969;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .top-content {
   background-color: lightgray;
@@ -194,6 +208,14 @@ header nav a {
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
 }
+@media (max-width: 500px) {
+  .top-content top-content {
+    width: 100%;
+  }
+  .top-content hr {
+    width: 430px;
+  }
+}
 .middle-content {
   display: flex;
   margin: 2.5rem 0 2rem 2.5rem;
@@ -201,6 +223,12 @@ header nav a {
 .middle-content .middle {
   width: 450px;
   margin-right: 4rem;
+}
+@media (max-width: 500px) {
+  .middle-content .middle {
+    margin-bottom: 3rem;
+    margin-right: 0px;
+  }
 }
 .middle-content .middle h3 {
   font-size: 2.5rem;
@@ -213,8 +241,20 @@ header nav a {
   line-height: 2.5rem;
   font-family: "Montserrat", sans-serif;
 }
+@media (max-width: 500px) {
+  .middle-content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+  }
+}
 .middle-content .middle2 {
   width: 450px;
+}
+@media (max-width: 500px) {
+  .middle-content .middle2 {
+    margin-bottom: 3rem;
+  }
 }
 .middle-content .middle2 h3 {
   font-size: 2.5rem;
@@ -263,6 +303,11 @@ header nav a {
 .table table td {
   text-align: center;
 }
+@media (max-width: 500px) {
+  .table {
+    width: 85%;
+  }
+}
 footer {
   margin: 3rem 0;
   padding: 3rem;
@@ -284,4 +329,11 @@ footer .copy {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
+}
+@media (max-width: 500px) {
+  footer {
+    width: 85%;
+    padding: 3rem 0;
+    margin-left: 2.5rem;
+  }
 }
